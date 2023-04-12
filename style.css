@@ -1,9 +1,9 @@
 body {
-    height: 100vh;
     margin: 0;
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 a {
     text-decoration: none;
@@ -24,35 +24,55 @@ ul {
     justify-content: center;
 
 }
-.header,
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #1f2937;
+}
+
 .header2 {
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 20px;
     background: #1f2937;
+    align-items: flex-start;
+    flex-direction: row;
 }
+#photo1 {
+    width: 500px;
+}
+
+
 .footer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     background: #1f2937;
     color: #E5E7EB;
+    height: 60px;
+    padding-bottom: 20px;
+    margin-top: 50px;
 }
 button {
     padding: 8px 16px;
     background: #3882f6;
     border-radius: 10%;
-    border-color: #F9FAF8;
+    border: 1px solid white;
     color: white;
-    font-weight: 500;
-    font-size: medium;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 25px;
 }
 .content {
-    flex: 1;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
+    margin: auto;
+    width: 70%;
+    height: 500px;
 }
 .information {
     display: flex;
@@ -60,6 +80,7 @@ button {
     font-weight: 900;
     color: #1f2937;
     align-items: center;
+    margin: 0px auto;
 }
 .quote {
     display: flex;
@@ -67,11 +88,13 @@ button {
     justify-content: center;
     flex-direction: row;
     background: #E5E7EB;
-    font-size: 36px;
+    font-size: 25px;
     font-weight: lighter;
     margin: auto;
     color: #1f2937;
     margin-bottom: 50px;
+    height: 400px;
+    width: 100%;
 }
 .signup {
     display: flex;
@@ -81,5 +104,45 @@ button {
     background: #3882f6;
     color: white;
     gap: 12px;
-    margin-bottom: 50px;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 24px;
+    width: 70%;
+    height: 130px;
+}
+.signup p {
+    color: white;
+    font-size: 16px;
+}
+.signup strong {
+    color: white;
+    font-size: 24px;
+}
+.quote span {
+    float: right;
+    font-size: 32px;
+    font-weight: bolder;
+}
+.quote div {
+    width: 50%;
+}
+.pictures {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-around;
+}
+.illustrations {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+.illustrations p {
+    display: block;
+}
+.button1 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end
 }
