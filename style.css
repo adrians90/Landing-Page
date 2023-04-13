@@ -37,11 +37,10 @@ ul {
     padding: 20px;
     background: #1f2937;
     align-items: flex-start;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
 }
-#photo1 {
-    width: 500px;
-}
+
 
 
 .footer {
